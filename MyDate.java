@@ -12,7 +12,7 @@ public class MyDate
   static void show(){System.out.println("in static method");}
   public static void main(String args[])
   {
-   system.out.println("test added");
+   system.out.println("this is change from remote repo");
    MyDate d= new MyDate();
    d.display();
    MyDate.show();
