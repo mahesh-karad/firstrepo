@@ -2,4 +2,4 @@ FROM java:8
 COPY . /var/www/java  
 WORKDIR /var/www/java  
 RUN javac MyDate.java  
-CMD ["java", "var/www/MyDate"]  
+CMD ["java", "MyDate"]  
