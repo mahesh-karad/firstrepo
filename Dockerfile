@@ -1,5 +1,4 @@
-FROM java:8  
-COPY . /var/www/java  
-WORKDIR /var/www/java  
+FROM anapsix/alpine-java 
+COPY /target/ /home/   
 RUN javac MyDate.java  
 CMD ["java", "MyDate"]  
