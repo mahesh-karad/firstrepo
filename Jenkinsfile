@@ -1,4 +1,4 @@
-#!groovy
+
 
 pipeline {
     agent any
@@ -16,12 +16,5 @@ pipeline {
                 echo 'Hello its running'
             }
         }
-stage('Docker Build') {
-      agent any
-      steps {
-        //sh 'docker build -t java-app .'
-   
-      }
-    }
     }
 }
