@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-                javac MyDate.java
+                sh javac MyDate.java
                 echo 'Hello its compiling'
             }
         }
         stage('run') {
             steps {
-                java MyDate
+                sh java MyDate
                 echo 'Hello its running'
             }
         }
