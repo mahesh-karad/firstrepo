@@ -1,14 +1,14 @@
 pipeline{
   agent any
   stages{
-    stage('compile stage'){
+    stage("compile stage"){
         steps{
-        sh 'java file compiled'
+        sh "java file compiled"
         }
     }
-       stage('run stage'){
+       stage("run stage"){
         steps{
-        sh 'java file running'
+        sh "java file running"
         }
   }
 }
