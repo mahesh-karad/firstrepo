@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-               
+                 
                 echo 'Hello its compiling'
             }
         }
@@ -12,6 +12,8 @@ pipeline {
             steps {
               
                 echo 'Hello its running'
+                sh 'docker build -t java-app .'
+                sh 'docker run java-app'
             }
         }
 
