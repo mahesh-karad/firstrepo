@@ -2,7 +2,7 @@ public class MyDate
 {
   private int day,month,year;
 
-  MyDate()
+  public MyDate()
   {
    day=20;month=10;year=2020;
   }
