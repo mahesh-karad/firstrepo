@@ -3,12 +3,12 @@ pipeline{
   stages{
     stage("compile stage"){
         steps{
-        sh "java file compiled"
+        echo 'java file compiled'
         }
     }
        stage("run stage"){
         steps{
-        sh "java file running"
+        echo 'java file running'
         }
   }
 }
