@@ -1,5 +1,4 @@
 FROM java:8  
-COPY . /var/www/java  
-WORKDIR /var/www/java  
-RUN javac MyDate.java  
-CMD ["java", "MyDate"]
+EXPOSE 8080 
+ADD target/MyDate.java MyDate.java
+ENTRYPOINT ["javac","/MyDate.java"]
