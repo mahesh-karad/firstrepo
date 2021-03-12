@@ -17,11 +17,5 @@ pipeline {
 				}
 			}
 			
-		stage ("docker") {
-			steps {
-				echo "Running Docker"
-				bat """ docker run mydate-img """
-				}
-			}
 		}
 	}
